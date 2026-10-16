@@ -1,0 +1,5 @@
+order_id,order_date,landing_url,utm_content,revenue,is_new_customer
+EX-1001,2026-09-01,https://example.com/?utm_source=facebook&utm_content=900000000000001,900000000000001,64.00,true
+EX-1002,2026-09-01,https://example.com/?utm_source=facebook&utm_content=900000000000001,900000000000001,48.00,false
+EX-1003,2026-09-02,https://example.com/?utm_source=facebook&utm_content=900000000000001,900000000000001,52.00,true
+EX-1004,2026-09-02,https://example.com/,,39.00,true

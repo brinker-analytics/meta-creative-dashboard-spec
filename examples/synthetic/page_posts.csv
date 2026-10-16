@@ -1,0 +1,3 @@
+post_id,message,created_time,permalink_url,full_picture,comment_total_count
+100000000000001_200000000000001,"Example post A (synthetic)",2026-08-25T14:00:00+0000,https://example.com/post-a,https://example.com/pic-a.jpg,42
+100000000000001_200000000000002,"Example post B (synthetic)",2026-08-28T14:00:00+0000,https://example.com/post-b,https://example.com/pic-b.jpg,9

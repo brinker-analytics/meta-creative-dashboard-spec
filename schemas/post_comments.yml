@@ -1,0 +1,8 @@
+table: post_comments
+grain: one row per top-level comment (scrubbed)
+privacy: never store from / commenter IDs; strip names and handles from text before storage; honor deletions
+columns:
+  - {name: post_id, type: string}
+  - {name: comment_text_scrubbed, type: string, from: message}   # [CHECK] message as a read field in v26.0
+  - {name: comment_created_time, type: timestamp, from: created_time}  # [CHECK]
+  - {name: theme, type: string, note: LLM tag}

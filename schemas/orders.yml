@@ -1,0 +1,10 @@
+table: orders
+grain: one row per order
+note: not Meta fields; map from your order system (e.g. Shopify landing-site / UTM fields) [CHECK]
+columns:
+  - {name: order_id, type: string}
+  - {name: order_date, type: date}
+  - {name: landing_url, type: string}
+  - {name: utm_content, type: string, note: "parsed from landing_url = Meta ad ID"}
+  - {name: revenue, type: decimal}
+  - {name: is_new_customer, type: boolean}

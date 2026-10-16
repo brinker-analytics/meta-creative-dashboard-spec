@@ -1,0 +1,11 @@
+table: ad_creatives
+grain: one row per creative
+columns:
+  - {name: creative_id, type: string, from: id}
+  - {name: effective_object_story_id, type: string, from: effective_object_story_id}
+  - {name: url_tags, type: string, from: url_tags}
+  - {name: video_id, type: string, from: video_id}
+  - {name: thumbnail_url, type: string, from: thumbnail_url}
+  - {name: image_url, type: string, from: image_url}
+  - {name: effective_instagram_media_id, type: string, from: effective_instagram_media_id}
+  - {name: instagram_permalink_url, type: string, from: instagram_permalink_url}

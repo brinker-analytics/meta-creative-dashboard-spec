@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use or cite this spec, please cite it as below."
+title: "meta-creative-dashboard-spec: a Meta creative dashboard spec for your own warehouse"
+authors:
+  - family-names: Brinker
+    given-names: Eric
+    affiliation: Brinker Analytics
+    email: eric@brinkeranalytics.com
+    website: "https://brinkeranalytics.com"
+version: 0.1.0
+date-released: 2026-10-15
+license: MIT
+url: "https://brinkeranalytics.com/insights/meta-creative-analytics-dashboard"
+repository-code: "https://github.com/brinker-analytics/meta-creative-dashboard-spec"

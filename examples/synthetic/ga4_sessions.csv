@@ -1,0 +1,5 @@
+session_id,session_date,utm_source,utm_medium,utm_content,engaged_session,add_to_carts,purchases
+s-0001,2026-09-01,facebook,paid_social,900000000000001,1,1,1
+s-0002,2026-09-01,facebook,paid_social,900000000000001,1,0,0
+s-0003,2026-09-02,facebook,paid_social,900000000000001,0,0,0
+s-0004,2026-09-02,facebook,paid_social,900000000000001,1,1,1

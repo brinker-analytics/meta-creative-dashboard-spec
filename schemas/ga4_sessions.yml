@@ -1,0 +1,12 @@
+table: ga4_sessions
+grain: one row per session
+note: not Meta fields; map from your GA4 export [CHECK]
+columns:
+  - {name: session_id, type: string}
+  - {name: session_date, type: date}
+  - {name: utm_source, type: string}
+  - {name: utm_medium, type: string}
+  - {name: utm_content, type: string, note: "= Meta ad ID"}
+  - {name: engaged_session, type: int}
+  - {name: add_to_carts, type: int}
+  - {name: purchases, type: int}

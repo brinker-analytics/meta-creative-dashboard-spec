@@ -1,0 +1,11 @@
+table: page_posts
+grain: one row per Page post
+columns:
+  - {name: post_id, type: string, from: id}
+  - {name: message, type: string, from: message}
+  - {name: created_time, type: timestamp, from: created_time}
+  - {name: permalink_url, type: string, from: permalink_url}
+  - {name: full_picture, type: string, from: full_picture}
+  - {name: attachment_title, type: string, from: "attachments{title}"}         # [CHECK] live sample
+  - {name: attachment_media_type, type: string, from: "attachments{media_type}"}  # [CHECK]
+  - {name: comment_total_count, type: int, from: "comments.summary(total_count) with summary=1&filter=toplevel"}

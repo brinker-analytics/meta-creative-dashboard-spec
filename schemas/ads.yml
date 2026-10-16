@@ -1,0 +1,10 @@
+table: ads
+grain: one row per ad per snapshot date
+columns:
+  - {name: ad_id, type: string, from: id}
+  - {name: snapshot_date, type: date}
+  - {name: ad_name, type: string, from: name}
+  - {name: creative_id, type: string, from: "creative{id}"}
+  - {name: adset_id, type: string, from: adset_id}
+  - {name: campaign_id, type: string, from: campaign_id}
+  - {name: effective_status, type: string, from: effective_status}
