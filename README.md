@@ -5,7 +5,7 @@ A spec your AI assistant can follow to build a Meta creative dashboard in your o
 > **Built by [Brinker Analytics](https://brinkeranalytics.com).** Eric Brinker's marketing-measurement consulting practice for DTC brands: geo tests, an MMM, and attribution.
 > **Contact:** [eric@brinkeranalytics.com](mailto:eric@brinkeranalytics.com) or the [contact form](https://brinkeranalytics.com/marketing-analytics-consultant#qualification).
 
-> **Full guide:** [How to Build a Meta Creative Analytics Dashboard That Reaches the Order](https://brinkeranalytics.com/insights/meta-creative-analytics-dashboard) on brinkeranalytics.com. It explains the reasoning behind each step.
+> **Full guide:** [How to Build a Meta Creative Analytics Dashboard Using Your Real Orders](https://brinkeranalytics.com/insights/meta-creative-analytics-dashboard) on brinkeranalytics.com. It explains the reasoning behind each step.
 
 ![Hand-drawn diagram of a Meta creative dashboard's table joins: ad insights join to ads on ad_id, ads to ad creatives on creative ID, creatives to Page posts on effective_object_story_id; url_tags carry utm_content={{ad.id}} to GA4 sessions and orders.](diagrams/meta-creative-table-joins.svg)
 
