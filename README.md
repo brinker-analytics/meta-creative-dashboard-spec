@@ -19,7 +19,7 @@ A spec your AI assistant can follow to build a Meta creative dashboard in your o
 
 It answers two questions:
 
-1. Which creative ideas earn attention? (Seconds viewed per impression, thumbstop rate, hook rate.)
+1. Which creative ideas earn attention? (Seconds viewed per impression, thumbstop rate (often called hook rate), hold rate.)
 2. Which ones reach orders in my own data? (First-party orders per 1,000 impressions, set beside Meta's credit.)
 
 It shows patterns, not proof. To learn whether a creative caused sales, test it. See the [creative performance analytics guide](https://brinkeranalytics.com/insights/creative-performance-analytics#test).
@@ -71,7 +71,7 @@ Every Meta field, parameter, and endpoint in `docs/fields/` was checked against 
 ## About the numbers
 
 - **The sample data is synthetic.** `examples/synthetic/` has a handful of made-up ads, posts, sessions, and orders. It says nothing about real performance.
-- **The metrics aren't guarantees.** Thumbstop, hook rate, CTA strength, and seconds per impression are ways to read creative. Test whether, and how, they move with your own results.
+- **The metrics aren't guarantees.** Thumbstop, hold rate, CTA strength, and seconds per impression are ways to read creative. Test whether, and how, they move with your own results.
 
 ## License
 

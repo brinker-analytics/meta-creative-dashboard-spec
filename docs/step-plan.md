@@ -31,4 +31,4 @@ Run in order. Each step: what you need, what you build, and how to check it.
 - **Check:** each side was aggregated before the join.
 
 ## 8. Weekly review
-- Sort by seconds per impression, thumbstop, hook rate, and first-party orders per 1,000 impressions. Note the biggest Meta-to-first-party gaps. Pick ONE idea to test with a holdout or geo test.
+- Sort by seconds per impression, thumbstop (often called hook rate), hold rate, and first-party orders per 1,000 impressions. Note the biggest Meta-to-first-party gaps. Pick ONE idea to test with a holdout or geo test.

@@ -1,4 +1,4 @@
-ad_id,date_start,attribution_setting,impressions,spend,inline_link_clicks,video_plays,video_views_3s,video_avg_time_watched_s,video_15s_or_complete,meta_purchases
+ad_id,date_start,attribution_setting,impressions,spend,inline_link_clicks,video_plays,video_views_3s,video_avg_time_watched_s,video_thruplays,meta_purchases
 900000000000001,2026-09-01,7d_click_1d_view,20000,180.00,160,9000,6000,6.0,1500,60
 900000000000001,2026-09-02,7d_click_1d_view,20000,175.00,150,9000,5800,6.0,1450,60
 900000000000002,2026-09-01,7d_click_1d_view,20000,170.00,210,15000,9000,4.0,1200,20
