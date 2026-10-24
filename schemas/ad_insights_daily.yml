@@ -12,7 +12,7 @@ columns:
   - {name: video_plays, type: int, from: video_play_actions (value where action_type = video_view)}   # [CHECK] action_type inside the list
   - {name: video_views_3s, type: int, from: "actions[action_type = video_view].value"}
   - {name: video_avg_time_watched_s, type: decimal, from: video_avg_time_watched_actions}               # [CHECK] seconds, per play
-  - {name: video_15s_or_complete, type: int, from: video_completed_view_or_15s_passed_actions}          # hook-rate numerator; undefined in Meta's reference (completed OR 15s)
+  - {name: video_thruplays, type: int, from: video_thruplay_watched_actions (value where action_type = video_view)}   # hold-rate numerator; ThruPlays = played to completion or for at least 15s (Meta Business Help). [CHECK] action_type inside the list
   - {name: video_time_watched_total, type: decimal, from: video_time_watched_actions, note: cross-check only}  # [CHECK]
   - {name: meta_purchases, type: decimal, from: "actions[action_type = omni_purchase].value"}
   - {name: meta_purchase_value, type: decimal, from: "action_values[action_type = omni_purchase].value"}

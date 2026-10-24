@@ -30,7 +30,8 @@ Source: Ad Insights edge reference, https://developers.facebook.com/documentatio
 | `video_time_watched_actions` | no definition on the page | **[CHECK]** units and meaning; cross-check only |
 | `video_30_sec_watched_actions` | plays ≥30s (or nearly full length if shorter) | verified |
 | `video_p25_watched_actions` … `video_p100_watched_actions` | plays reaching 25/50/75/95/100% | verified |
-| `video_completed_view_or_15s_passed_actions` | no definition | **hook-rate numerator.** Caveat: undefined in the reference; the name implies "completed OR reached 15s", so short videos can count by finishing. Confirm on a sample |
+| `video_thruplay_watched_actions` | no definition in the reference; Meta Business Help: "played to completion, or for at least 15 seconds" | **hold-rate numerator** (ThruPlays). Short videos can count by finishing. **[CHECK]** action_type inside the list on a sample |
+| `video_completed_view_or_15s_passed_actions` | no definition | name verified; not used |
 | `video_play_curve_actions` | % of plays reaching each second (entries 0–14 = seconds 0–14; 15 = [15,20)) | verified; alternative 15-second source |
 | `video_continuous_2_sec_watched_actions` | no definition | name verified; not used |
 | `cost_per_thruplay` | | verified; not used |
@@ -48,7 +49,7 @@ Source: Ad Insights edge reference, https://developers.facebook.com/documentatio
 Pick ONE purchase action type and keep it.
 
 ## Not in the v26.0 field list (don't use)
-`video_15_sec_watched_actions`, `video_3_sec_watched_actions`. `video_thruplay_watched_actions` is mentioned on the Breakdowns page, but it isn't in the field list.
+`video_15_sec_watched_actions`, `video_3_sec_watched_actions`.
 
 ## Limits (Best Practices page)
 - "Insights refresh every 15 minutes and do not change after 28 days of being reported." Re-pull the trailing 28 days.

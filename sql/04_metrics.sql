@@ -7,7 +7,7 @@ SELECT
   -- seconds viewed per impression: rebuild total seconds (avg per play x plays), divide by impressions once
   SUM(i.video_avg_time_watched_s * i.video_plays) / NULLIF(SUM(i.impressions), 0)   AS sec_per_impression,
   SUM(i.video_views_3s) / NULLIF(SUM(i.impressions), 0)                 AS thumbstop_rate,
-  SUM(i.video_15s_or_complete) / NULLIF(SUM(i.video_views_3s), 0)       AS hook_rate,      -- numerator: video_completed_view_or_15s_passed_actions (completed OR 15s; see docs/metrics.md)
+  SUM(i.video_thruplays) / NULLIF(SUM(i.video_views_3s), 0)             AS hold_rate,      -- numerator: ThruPlays (video_thruplay_watched_actions); see docs/metrics.md
   SUM(i.inline_link_clicks) / NULLIF(SUM(i.video_views_3s), 0)          AS cta_strength_clicks,
   SUM(s.sessions) / NULLIF(SUM(i.video_views_3s), 0)                    AS cta_strength_sessions,
   1000.0 * SUM(o.tagged_orders) / NULLIF(SUM(i.impressions), 0)         AS orders_per_1000_impr,

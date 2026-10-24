@@ -5,8 +5,8 @@ Sum numerators and denominators across rows, then divide. Never average daily ra
 | Metric | Formula | Use it to |
 |---|---|---|
 | **Seconds viewed per impression** | `SUM(video_avg_time_watched_actions × video_play_actions) / SUM(impressions)` | read attention without CPMs and the auction in it |
-| Thumbstop rate | `SUM(actions[video_view]) / SUM(impressions)` | see whether the opening stops the scroll |
-| Hook rate | `SUM(video_completed_view_or_15s_passed_actions) / SUM(actions[video_view])` | see whether people who stopped kept watching (see the caveat below) |
+| Thumbstop rate (often called hook rate) | `SUM(actions[video_view]) / SUM(impressions)` | see whether the opening stops the scroll |
+| Hold rate | `SUM(video_thruplay_watched_actions) / SUM(actions[video_view])` | see whether people who stopped kept watching (see the caveat below) |
 | CTA strength | `SUM(inline_link_clicks) / SUM(actions[video_view])`; after the GA4 join: `SUM(sessions) / SUM(actions[video_view])` | see whether viewers act |
 | First-party orders per 1,000 impressions | `tagged_orders / SUM(impressions) × 1000` | reach the order on your own record |
 | First-party revenue per 1,000 impressions | `tagged_revenue / SUM(impressions) × 1000` | same, in money |
@@ -27,9 +27,9 @@ Meta: `video_avg_time_watched_actions` is "The average time a video was played, 
 
 Why prefer it over CPV: "It normalizes the engagement action. CPV is heavily a function of CPMs and bidding as well as engagement." (Eric Brinker)
 
-## Hook rate numerator: definition caveat
+## Hold rate numerator: ThruPlays
 
-The numerator is `video_completed_view_or_15s_passed_actions`. Meta's v26.0 reference lists the field but gives no definition. Going by its name, it counts views that reached 15 seconds OR finished the video, so a video shorter than 15 seconds can count a "15-second view" just by being watched to the end. Compare hook rates within similar video lengths, and confirm the field's behavior on a live sample.
+The numerator is ThruPlays, from `video_thruplay_watched_actions` (listed in the [Insights reference](https://developers.facebook.com/docs/graph-api/reference/adaccount/insights/)). Meta defines ThruPlays as "the number of times your video was played to completion, or for at least 15 seconds" ([Meta Business Help](https://www.facebook.com/business/help/1792720544284355)). So a video shorter than 15 seconds can earn a ThruPlay just by being watched to the end. Compare hold rates within similar video lengths. Some teams call thumbstop the hook rate; this spec has no separate hook rate. Teams define these differently, so pick one definition and keep it.
 
 ## Cautions
 - These metrics aren't guarantees of success. Test whether, and how, they move with your own results.
