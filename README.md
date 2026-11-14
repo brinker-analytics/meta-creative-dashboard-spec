@@ -3,7 +3,7 @@
 A spec your AI assistant can follow to build a Meta creative dashboard in your own warehouse: tables, joins, metrics, and SQL.
 
 > **Built by [Brinker Analytics](https://brinkeranalytics.com).** Eric Brinker's marketing-measurement consulting practice for DTC brands: geo tests, an MMM, and attribution.
-> **Contact:** [eric@brinkeranalytics.com](mailto:eric@brinkeranalytics.com) or the [contact form](https://brinkeranalytics.com/marketing-analytics-consultant#qualification).
+> **Contact:** [eric@brinkeranalytics.com](mailto:eric@brinkeranalytics.com) or the [contact page](https://brinkeranalytics.com/contact).
 
 > **Full guide:** [How to Build a Meta Creative Analytics Dashboard Using Your Real Orders](https://brinkeranalytics.com/insights/meta-creative-analytics-dashboard) on brinkeranalytics.com. It explains the reasoning behind each step.
 
@@ -44,6 +44,15 @@ It shows patterns, not proof. To learn whether a creative caused sales, test it.
 3. Give it read access to your warehouse. Name your datasets and tables.
 4. Have it work one step at a time. It checks every field against a live API sample and Meta's current docs, and stops to ask when something's missing.
 5. Review each output table before the next step.
+
+## What to do with this
+
+- **If many ads have no first-party orders joined to them,** run the tag audit in `docs/url-tags.md` and fix the `utm_content={{ad.id}}` tags before you read any creative numbers.
+- **If Meta's credit is far above first-party orders for a creative,** don't pick a winner on Meta ROAS alone. That creative is a candidate for a holdout or geo test. Test it only if the answer might change the budget and you will act on the result.
+- **If an ad ranks high on seconds viewed per impression or thumbstop rate but low on first-party orders per 1,000 impressions,** treat it as a pattern to test, not a reason to cut or scale it yet.
+- **If you're reading trends over time,** keep one attribution setting per trend and re-pull the trailing 28 days, since Insights can change after the fact.
+
+If you want this dashboard built in your own warehouse without doing the build yourself, send me a note and we'll talk it through: [Get in touch](https://brinkeranalytics.com/contact).
 
 ## Repository layout
 
